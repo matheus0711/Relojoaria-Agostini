@@ -1,0 +1,126 @@
+/* CSS Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Título da Página */
+h1 {
+    font-family: 'Aboreto', sans-serif;
+    font-size: 30px;
+    color: #008000;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Seção de Produtos */
+.products {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-item {
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+/* Efeito de hover para os itens */
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo do rodapé das páginas */
+footer {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.footer-item p {
+    font-weight: bold;
+}
+
+.footer-item span {
+    color: #777;
+}
+
+/* Estilo dos produtos */
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px;
+}
+
+.product-item {
+    text-align: center;
+    border: 1px solid #ddd; /* Borda ao redor do item */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 15px;
+    width: 200px; /* Ajuste a largura conforme necessário */
+    background-color: #fff; /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.product-item img {
+    width: 100%; /* Imagem ocupa 100% da largura do item */
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #024752;
+    font-weight: bold;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    background-color: #024752; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #015a4b; /* Cor do botão quando passar o mouse */
+}

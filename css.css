@@ -1,0 +1,420 @@
+/* Estilo para toda a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Logo e Cabeçalho */
+header {
+    background: linear-gradient(90deg, #009246, #ffffff, #ce2b37); /* Gradiente com as cores da bandeira da Itália */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo h1 {
+   font-family: 'Aboreto', sans-serif;
+   font-size: 24px;
+}
+
+/* Estilizando a "linha de pesquisa" */
+.search-bar {
+    position: relative;
+}
+
+.search-text {
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* A linha de baixo */
+.search-bar::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    border-bottom: 2px solid black; /* Linha do "risco" */
+    width: 150px; /* A largura da linha */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Estilo para as opções de usuário */
+.user-options span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    font-size: 20px;
+}
+
+/* Navegação */
+nav {
+    background-color: #DCDCDC;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Estilo específico para os itens de lista de navegação */
+nav ul li {
+    color: white; /* Define a cor dos itens de navegação */
+    font-family: Arial, sans-serif; /* Define a fonte para os itens de navegação */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+}
+
+/* Para assegurar que links dentro dos itens de navegação fiquem sem a cor azul */
+nav ul li a {
+    color: inherit; /* Herda a cor definida no item de lista */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Estilo para o item "Minha Conta" */
+#minha-conta {
+    color: black; /* Define a cor do texto como preto */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    cursor: pointer; /* Altera o cursor para indicar que é interativo */
+}
+
+/* Alterando a cor do item "Minha Conta" quando passar o mouse */
+#minha-conta:hover {
+    color: #024752; /* Nova cor ao passar o mouse */
+}
+
+
+/* Produtos */
+.products {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: black;
+    font-family: 'Outfit'
+}
+
+.product-item {
+    text-align: center;
+}
+
+.product-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Rodapé */
+footer {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footer-item p {
+    font-weight: bold;
+}
+
+.footer-item span {
+    color: #777;
+}
+
+.additional-image {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-below-footer {
+    width: 90%; /* Largura maior */
+    max-height: 290px; /* Altura menor */
+    /*object-fit: cover; /* Ajusta a imagem sem distorção */
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.company-info {
+    padding: 20px;
+    background-color: #DCDCDC; /* Cor de fundo clara para destacar */
+}
+
+.info-section {
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #DAA520; /* Linha separadora */
+}
+
+.info-section:last-child {
+    border-bottom: none; /* Remove a linha da última seção */
+}
+
+.info-section h2 {
+    font-size: 24px;
+    color: #A52A2A; /* Cor do título combinando com a paleta */
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 16px;
+    color: black; /* Cor do texto */
+    line-height: 1.6;
+}
+
+/* Estilo do formulário de contato */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-form h2 {
+    font-size: 24px;
+    color: #024752;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #024752;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #015a4b;
+}
+
+/* Quando o link for focado ou ao passar o mouse, garantir que a cor e o fundo não mudem */
+#button:focus,
+#button:hover {
+    color: black; /* Garante que a cor do texto seja preta */
+    background-color: transparent; /* Mantém o fundo transparente */
+    border: 1px solid black; /* Borda preta */
+    text-decoration: none; /* Remove o sublinhado no hover ou focus */
+}
+
+/* Para links não visitados */
+a:link {
+    color: black; /* Define a cor do texto para links não visitados */
+    text-decoration: none; /* Remove o sublinhado dos links não visitados */
+}
+
+/* Para links visitados */
+a:visited {
+    color: black; /* Garante que links visitados também tenham a cor preta */
+    text-decoration: none; /* Remove o sublinhado dos links visitados */
+}
+
+/* Remover qualquer estilo de link padrão (como cor azul e sublinhado) */
+a:focus,
+a:hover {
+    color: black; /* Define a cor do link como preta no hover ou focus */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fundo claro */
+    color: #333; /* Texto escuro */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo-img {
+    height: 60px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-family: 'Aboreto', cursive;
+}
+
+/* Seção de opções de conta */
+.account-options {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.account-options h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.account-options p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Botões */
+.account-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.account-buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.account-buttons button#btn-criar-conta {
+    background-color: #000;
+    color: #fff;
+}
+
+.account-buttons button#btn-criar-conta:hover {
+    background-color: #444;
+}
+
+.account-buttons button#btn-continuar-sem-conta {
+    background-color: #ccc;
+    color: #000;
+}
+
+.account-buttons button#btn-continuar-sem-conta:hover {
+    background-color: #999;
+}
+
+
+
+/* Estilo geral para inputs e botões */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="number"], 
+textarea {
+    font-family: 'Outfit', sans-serif; /* Fonte harmoniosa com o site */
+    font-size: 16px; /* Ajusta o tamanho do texto */
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px 0; /* Espaçamento externo */
+    width: calc(100% - 20px); /* Preenche o espaço disponível, com margem */
+    max-width: 400px; /* Limita a largura máxima */
+    border: 1px solid #ccc; /* Borda discreta */
+    border-radius: 5px; /* Arredonda os cantos */
+    background-color: #f9f9f9; /* Fundo claro */
+    color: #333; /* Texto escuro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Efeito ao focar */
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus, 
+input[type="number"]:focus, 
+textarea:focus {
+    border-color: #000; /* Borda destacada ao focar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao focar */
+    outline: none; /* Remove o outline padrão */
+}
+
+/* Botões */
+button {
+    font-family: 'Outfit', sans-serif; /* Fonte harmoniosa */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444; /* Cor de fundo mais escura */
+    color: #fff; /* Texto branco */
+}
+
+
+.buy-button:focus, .buy-button:active {
+    outline: none;
+    text-decoration: none; /* Remove qualquer sublinhado que possa aparecer */
+}
+

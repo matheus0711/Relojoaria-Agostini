@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento - Relojoaria Agostini</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header> 
+        <h1>Contato - Relojoaria Agostini</h1>
+    </header>
+
+    <section class="contact-form">
+        <h2>Entre em Contato</h2>
+        <form id="form">
+            <div class="field">
+              <label for="subject">Assunto</label>
+              <input type="text" name="subject" id="subject" required>
+            </div>
+            <div class="field">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="field">
+              <label for="message">Mensagem</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            
+
+            <input type="submit" id="button" value="Enviar E-mail">
+        </form>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    </section>
+
+    <!-- Inclui o arquivo JavaScript -->
+    <script src="js.js"></script>
+</body>
+</html>
